@@ -11,9 +11,7 @@ const devConfig = {
 	devtool: "eval-source-map",
 	devServer: {
 		port: 8081,
-		historyApiFallback: {
-			index: "index.html"
-		}
+		historyApiFallback: true
 	},
 
 	plugins: [

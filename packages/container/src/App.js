@@ -9,7 +9,7 @@ const generateClassName = createGenerateClassName({
 	productionPrefix: "co"
 })
 
-export default () => {
+export default() => {
 	return (
 		<StylesProvider generateClassName={generateClassName}>
 			<BrowserRouter>
