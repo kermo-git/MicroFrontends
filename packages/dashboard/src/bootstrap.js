@@ -1,13 +1,9 @@
-import React from "react"
-import ReactDOM from "react-dom"
-
-import App from "./App"
+import { createApp } from "vue"
+import Dashboard from "./components/Dashboard.vue"
 
 const mount = (element) => {
-	ReactDOM.render(
-		<App/>,
-		element
-	)
+	const app = createApp(Dashboard)
+	app.mount(element)
 }
 
 if (process.env.NODE_ENV === "development") {
